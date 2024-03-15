@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import HomePage from "./components/HomePage";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <HomePage />;
 }
 
 export default App;
+
+// il Search dovrebbe essere gestito meglio, nello stato attuale fa la ricerca la prima volta e poi
+// diventa statico e non permette nè di fare altre ricerche nè di cambiare pagina tramite il dropdown
