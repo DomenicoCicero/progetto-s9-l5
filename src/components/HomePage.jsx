@@ -56,7 +56,7 @@ class HomePage extends Component {
           </>
         )}
 
-        {this.state.textForm !== "" && this.state.genre === "" && (
+        {this.state.textForm !== "" && (
           <>
             <Films title={this.state.textForm} />
           </>
